@@ -56,8 +56,15 @@ resource "aws_lambda_function" "sentinel_detector" {
   timeout     = 10
   memory_size = 128
 
+  environment {
+    variables = {
+      SENTINEL_EVIDENCE_BUCKET = aws_s3_bucket.evidence.bucket
+    }
+  }
+
   depends_on = [
     aws_iam_role_policy.lambda_logging,
+    aws_iam_role_policy.lambda_findings_write,
     aws_cloudwatch_log_group.sentinel_lambda
   ]
 }

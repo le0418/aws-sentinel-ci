@@ -1,8 +1,8 @@
-
 import json
 import logging
 
 from src.detect_threats import detect_threat
+from src.finding_persistence import persist_finding
 from src.validate_events import validate_event
 
 
@@ -37,11 +37,31 @@ def lambda_handler(event, context):
             "simulation": event["simulation"]
         }))
 
+        try:
+            evidence = persist_finding(event, finding)
+
+        except Exception:
+            logger.exception(json.dumps({
+                "action": "EVIDENCE_PERSISTENCE_FAILED",
+                "event_id": event["event_id"],
+                "simulation": True
+            }))
+            raise
+
+        logger.info(json.dumps({
+            "action": "EVIDENCE_PERSISTED",
+            "event_id": event["event_id"],
+            "evidence_key": evidence["key"],
+            "sha256": evidence["sha256"],
+            "simulation": True
+        }))
+
         return {
             "statusCode": 200,
             "body": {
-                "message": "Security finding generated",
-                "finding": finding
+                "message": "Security finding generated and persisted",
+                "finding": finding,
+                "evidence": evidence
             }
         }
 
