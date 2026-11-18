@@ -1,0 +1,7 @@
+AWS Sentinel-CI - Evidence Integrity Report
+===========================================
+Date: 2026-11-17 19:12:37 -08:00
+Evidence Type: Simulated RF Anomaly
+Original SHA-256: DDD26AA01321C8C1CAA6D99700DEF31C658629C9CC551A5189EE6D893E6345CF
+Retrieved SHA-256: DDD26AA01321C8C1CAA6D99700DEF31C658629C9CC551A5189EE6D893E6345CF
+Integrity Verified: True
