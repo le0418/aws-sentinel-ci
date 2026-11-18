@@ -1,0 +1,26 @@
+﻿python : test_different_locations (test_correlate_events.TestEventCorrelation.test_different_locations) ... ok
+At line:2 char:1
++ python -m unittest discover -s tests -p "test_*.py" -v 2>&1 | Out-Fil ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_different_...cations) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_exact_window_boundary (test_correlate_events.TestEventCorrelation.test_exact_window_boundary) ... ok
+test_invalid_timestamp (test_correlate_events.TestEventCorrelation.test_invalid_timestamp) ... ok
+test_low_severity_event (test_correlate_events.TestEventCorrelation.test_low_severity_event) ... ok
+test_matching_events (test_correlate_events.TestEventCorrelation.test_matching_events) ... ok
+test_missing_timestamp (test_correlate_events.TestEventCorrelation.test_missing_timestamp) ... ok
+test_non_dictionary_event (test_correlate_events.TestEventCorrelation.test_non_dictionary_event) ... ok
+test_outside_time_window (test_correlate_events.TestEventCorrelation.test_outside_time_window) ... ok
+test_high_severity_network_connection (test_detect_threats.TestThreatDetection.test_high_severity_network_connection) 
+... ok
+test_high_severity_rf_anomaly (test_detect_threats.TestThreatDetection.test_high_severity_rf_anomaly) ... ok
+test_high_severity_unknown_event (test_detect_threats.TestThreatDetection.test_high_severity_unknown_event) ... ok
+test_invalid_timestamp_rejected (test_detect_threats.TestThreatDetection.test_invalid_timestamp_rejected) ... ok
+test_low_severity_rf_anomaly (test_detect_threats.TestThreatDetection.test_low_severity_rf_anomaly) ... ok
+test_missing_timestamp_rejected (test_detect_threats.TestThreatDetection.test_missing_timestamp_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.002s
+
+OK
