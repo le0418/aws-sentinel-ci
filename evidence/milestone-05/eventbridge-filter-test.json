@@ -1,0 +1,8 @@
+[
+    {
+        "Detail":  "{\"event_id\":\"59fc34b7-e06a-4eb3-99dc-7948d291044f\",\"timestamp\":\"2026-11-18T05:28:10.9872664Z\",\"source\":\"sentinel-ci-simulator\",\"sensor_id\":\"TSCM-SIM-001\",\"event_type\":\"RF_ANOMALY\",\"severity\":\"HIGH\",\"frequency_mhz\":915.0,\"signal_strength_dbm\":-42,\"location\":\"SIMULATED_SECURE_FACILITY\",\"description\":\"Synthetic unauthorized RF transmission detected\",\"simulation\":false}",
+        "EventBusName":  "default",
+        "Source":  "sentinel.ci",
+        "DetailType":  "SecurityTelemetry"
+    }
+]

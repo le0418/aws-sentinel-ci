@@ -1,0 +1,1 @@
+{"detail":{"event_type":["RF_ANOMALY","UNAUTHORIZED_DEVICE","SUSPICIOUS_NETWORK_CONNECTION"],"simulation":[true]},"detail-type":["SecurityTelemetry"],"source":["sentinel.ci"]}
