@@ -1,4 +1,7 @@
-﻿.terraform/
+﻿# Generated Lambda deployment artifacts
+build/
+*.zip
+.terraform/
 *.tfstate
 *.tfstate.*
 *.tfvars
