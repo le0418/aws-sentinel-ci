@@ -1,0 +1,8 @@
+[
+    {
+        "Detail":  "{\"event_type\":\"RF_ANOMALY\",\"simulation\":true,\"timestamp\":\"2026-11-19T04:04:31.5073285Z\",\"description\":\"Milestone 7 normal processing verification\",\"event_id\":\"MILESTONE07-RECOVERY-20261118200431\",\"severity\":\"HIGH\",\"location\":\"SIMULATED_TEST_LAB\"}",
+        "EventBusName":  "default",
+        "Source":  "sentinel.ci",
+        "DetailType":  "SecurityTelemetry"
+    }
+]

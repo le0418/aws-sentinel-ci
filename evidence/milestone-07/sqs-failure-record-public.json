@@ -1,0 +1,32 @@
+{
+    "version":  "1.0",
+    "timestamp":  "2026-11-19T03:37:19.979Z",
+    "requestContext":  {
+                           "requestId":  "[REDACTED_REQUEST_ID]",
+                           "functionArn":  "arn:aws:lambda:us-east-1:[REDACTED_ACCOUNT_ID]:function:sentinel-ci-detector:$LATEST",
+                           "condition":  "RetriesExhausted",
+                           "approximateInvokeCount":  2
+                       },
+    "requestPayload":  {
+                           "event_type":  "RF_ANOMALY",
+                           "simulation":  true,
+                           "timestamp":  "2026-11-19T03:26:38.9635481Z",
+                           "description":  "Controlled Lambda failure recovery test",
+                           "event_id":  "MILESTONE07-CONTROLLED-FAILURE",
+                           "severity":  "HIGH",
+                           "location":  "SIMULATED_TEST_LAB"
+                       },
+    "responseContext":  {
+                            "statusCode":  200,
+                            "executedVersion":  "$LATEST",
+                            "functionError":  "Unhandled"
+                        },
+    "responsePayload":  {
+                            "errorMessage":  "MILESTONE07_CONTROLLED_FAILURE_TEST",
+                            "errorType":  "RuntimeError",
+                            "requestId":  "[REDACTED_REQUEST_ID]",
+                            "stackTrace":  [
+                                               "  File \"/var/task/src/lambda_handler.py\", line 26, in lambda_handler\n    raise RuntimeError(\"MILESTONE07_CONTROLLED_FAILURE_TEST\")\n"
+                                           ]
+                        }
+}

@@ -24,3 +24,5 @@ venv/
 
 .DS_Store
 Thumbs.db
+src/lambda_handler.py.milestone07-backup
+evidence/milestone-07/sqs-failure-record.json

@@ -1,0 +1,10 @@
+﻿{
+    "Entries":  [
+                    {
+                        "Detail":  "{\"event_type\":\"RF_ANOMALY\",\"simulation\":true,\"timestamp\":\"2026-11-19T03:26:38.9635481Z\",\"description\":\"Controlled Lambda failure recovery test\",\"event_id\":\"MILESTONE07-CONTROLLED-FAILURE\",\"severity\":\"HIGH\",\"location\":\"SIMULATED_TEST_LAB\"}",
+                        "EventBusName":  "default",
+                        "Source":  "sentinel.ci",
+                        "DetailType":  "SecurityTelemetry"
+                    }
+                ]
+}
